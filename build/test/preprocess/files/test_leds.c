@@ -76,9 +76,9 @@ void test_apagar_un_led(void)
 
 
 
-    leds_turn_on(LED);
+    leds_turn_on(5);
 
-    leds_turn_off(LED);
+    leds_turn_off(4);
 
     UnityAssertEqualNumber((UNITY_INT)(UNITY_UINT16)((0x00)), (UNITY_INT)(UNITY_UINT16)((leds_virtuales)), (((void*)0)), (UNITY_UINT)(54), UNITY_DISPLAY_STYLE_UINT16);
 

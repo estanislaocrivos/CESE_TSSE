@@ -11,10 +11,10 @@ void leds_init(uint16_t * puerto)
 
 void leds_turn_on(int led)
 {
-    *puntero = 4;
+    *puntero |= (1 << (led-1));
 }
 
 void leds_turn_off(int led)
 {
-    *puntero = 0;
+    *puntero &= ~(1 << (led-1));
 }

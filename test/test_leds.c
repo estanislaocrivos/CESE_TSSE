@@ -49,7 +49,7 @@ void test_apagar_un_led(void)
     // static const int LED = 3;
     // uint16_t leds_virtuales;
     // leds_init(&leds_virtuales);
-    leds_turn_on(LED);
-    leds_turn_off(LED);
+    leds_turn_on(5);
+    leds_turn_off(4);
     TEST_ASSERT_EQUAL_UINT16(0x00, leds_virtuales);
 }
