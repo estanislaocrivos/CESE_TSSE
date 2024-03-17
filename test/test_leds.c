@@ -3,6 +3,8 @@ Con todos los leds apagados prender el led 3 y verificar que efectivamente el bi
 Con todos los leds apagados prender un led y verificar que al consultar el estado del mismo me informa que esta prendido.
 Prender todos los leds que estan apagados antes de la operación
 Apagar todos los leds que ya estan prendidos
+
+
 Prender leds que ya esten prendidos de antes
 Apagar leds que ya esten apagados
 Comprobar valores prohibidos
