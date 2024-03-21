@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+#define selected_led_set_high_array (uint16_t)(1 << (led-1))
+
 /* === Public function declarations ============================================================ */
 
 /**

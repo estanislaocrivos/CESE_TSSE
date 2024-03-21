@@ -105,6 +105,15 @@ void test_apagar_leds_prendidos(void)
     TEST_ASSERT_EQUAL_UINT16(0x00, leds_virtuales);
 }
 
+/**
+ * Descrip. del test: consultar el estado de un test.
+*/
+void test_consultar_estado_de_led(void)
+{
+    leds_turn_on(7);
+    TEST_ASSERT_EQUAL_INT(1, led_status(7));
+}
+
 
 
 

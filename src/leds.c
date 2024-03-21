@@ -25,17 +25,17 @@ void leds_init(uint16_t * puerto)
 
 void leds_turn_on(int led)
 {
-    *puntero |= (1 << (led-1));
+    *puntero |= selected_led_set_high_array;
 }
 
 void leds_turn_off(int led)
 {
-    *puntero &= ~(1 << (led-1));
+    *puntero &= ~selected_led_set_high_array;
 }
 
 int led_status(int led)
 {
-    if(*puntero == (1 << (led-1)))
+    if((*puntero & selected_led_set_high_array) != 0)
     {
         return 1;
     }
